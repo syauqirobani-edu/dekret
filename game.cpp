@@ -235,8 +235,6 @@ void menuUtama() {
                         clearScreen();
                         jalankanGame(pemain, bulan, saveList);
                     }
-                    cout << "Memuat game...\n";
-                    delay(800);
                     break;
                 }
                 else if (slot == 'q' || slot == 'Q')
@@ -247,6 +245,8 @@ void menuUtama() {
                 else
                 {
                     cout << "Input tidak valid!\n";
+                    pauseScreen();
+                    clearScreen();
                 }
                 cout << endl;
             }
@@ -570,6 +570,6 @@ void jalankanGame(Statistik &pemain, int bulan_awal, SaveNode* saveList) {
     }
     else {
         delay(3000);
-        cout << "\nGame Over.\n";
+        cout << "\nGame Berakhir.\n";
     }
 }
