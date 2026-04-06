@@ -1,6 +1,6 @@
 #include "scenario.hpp"
 
-static Skenario skenarioList[20] = 
+static Skenario skenarioList[60] = 
 {
     {
         "Perusahaan swasta meminta izin untuk membuka lahan sawit di hutan lindung.",
@@ -119,6 +119,126 @@ static Skenario skenarioList[20] =
         "Kasus stunting masih tinggi di beberapa daerah.",
         {"Program bantuan gizi besar-besaran", -10, +10, 0, 0},
         {"Fokus edukasi jangka panjang", -5, +5, 0, 0}
+    },
+
+    {
+        "Harga listrik naik akibat krisis energi.",
+        {"Naikkan tarif listrik", +10, -10, 0, -5},
+        {"Subsidi listrik", -10, +5, 0, 0}
+    },
+
+    {
+        "Protes buruh menuntut kenaikan upah minimum.",
+        {"Naikkan UMR", -5, +10, 0, 0},
+        {"Tolak tuntutan", +5, -10, 0, 0}
+    },
+
+    {
+        "Kasus pelanggaran HAM masa lalu kembali mencuat.",
+        {"Buka investigasi", -5, +10, -5, 0},
+        {"Tutup isu", +5, -10, 0, 0}
+    },
+
+    {
+        "Krisis air bersih melanda beberapa daerah.",
+        {"Bangun infrastruktur air", -10, +5, 0, +10},
+        {"Distribusi darurat", -5, +5, 0, 0}
+    },
+
+    {
+        "Industri lokal kalah saing dengan produk impor.",
+        {"Batasi impor", -5, +5, 0, 0},
+        {"Biarkan pasar bebas", +5, -5, 0, 0}
+    },
+
+    {
+        "Kasus pandemi baru mulai menyebar.",
+        {"Lockdown wilayah", -10, +5, 0, +5},
+        {"Biarkan aktivitas normal", +5, -10, 0, -5}
+    },
+
+    {
+        "Tekanan internasional untuk mengurangi emisi karbon.",
+        {"Kurangi emisi drastis", -5, +5, 0, +10},
+        {"Abaikan tekanan", +5, -5, 0, -10}
+    },
+
+    {
+        "Krisis perumahan di kota besar.",
+        {"Bangun rumah subsidi", -10, +10, 0, 0},
+        {"Serahkan ke swasta", +5, -5, 0, 0}
+    },
+
+    {
+        "Demonstrasi anti pemerintah semakin besar.",
+        {"Dialog dengan massa", -5, +10, 0, 0},
+        {"Tindak tegas", 0, -10, +10, 0}
+    },
+
+    {
+        "Harga emas melonjak, investor panik.",
+        {"Stabilkan pasar", -5, +5, 0, 0},
+        {"Biarkan mekanisme pasar", +5, -5, 0, 0}
+    },
+
+    {
+        "Kasus mafia tanah merugikan masyarakat.",
+        {"Berantas mafia", -5, +10, -5, 0},
+        {"Diamkan demi stabilitas", +5, -10, 0, 0}
+    },
+
+    {
+        "Teknologi AI mulai menggantikan banyak pekerjaan.",
+        {"Regulasi AI", -5, +10, 0, 0},
+        {"Dukung inovasi penuh", +5, -5, 0, 0}
+    },
+
+    {
+        "Krisis transportasi umum di kota besar.",
+        {"Bangun transportasi massal", -10, +10, 0, +5},
+        {"Biarkan swasta berkembang", +5, -5, 0, 0}
+    },
+
+    {
+        "Kasus kekerasan meningkat di masyarakat.",
+        {"Perketat hukum", -5, 0, +10, 0},
+        {"Program edukasi sosial", -5, +10, 0, 0}
+    },
+
+    {
+        "Ketergantungan impor pangan meningkat.",
+        {"Perkuat pertanian lokal", -5, +5, 0, +5},
+        {"Impor besar-besaran", +10, 0, 0, -5}
+    },
+
+    {
+        "Skandal pajak besar melibatkan perusahaan besar.",
+        {"Tindak tegas perusahaan", -5, +10, -5, 0},
+        {"Lindungi investor", +10, -10, 0, 0}
+    },
+
+    {
+        "Penebangan liar meningkat di hutan.",
+        {"Tindak tegas pelaku", -5, +5, 0, +10},
+        {"Biarkan demi ekonomi", +10, 0, 0, -10}
+    },
+
+    {
+        "Krisis pendidikan akibat kekurangan guru.",
+        {"Rekrut guru besar-besaran", -10, +10, 0, 0},
+        {"Gunakan sistem online", -5, +5, 0, 0}
+    },
+
+    {
+        "Nilai mata uang melemah drastis.",
+        {"Intervensi pasar", -5, +5, 0, 0},
+        {"Biarkan pasar menyesuaikan", +5, -5, 0, 0}
+    },
+
+    {
+        "Gerakan separatis muncul di daerah tertentu.",
+        {"Pendekatan militer", -5, -5, +10, 0},
+        {"Dialog damai", 0, +10, -5, 0}
     }
 };
 
@@ -127,5 +247,5 @@ Skenario* daftarSkenario() {
 }
 
 int jumlahSkenario() {
-    return 20;
+    return 60;
 }

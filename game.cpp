@@ -232,11 +232,11 @@ void menuUtama() {
                 {
                     int slotAngka = slot - '0';
                     if (muatDariSlot(slotAngka, pemain, bulan)) {
+                        clearScreen();
                         jalankanGame(pemain, bulan, saveList);
                     }
                     cout << "Memuat game...\n";
                     delay(800);
-                    clearScreen();
                     break;
                 }
                 else if (slot == 'q' || slot == 'Q')
